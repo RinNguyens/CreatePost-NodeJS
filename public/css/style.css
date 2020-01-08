@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wapper {
+    width: 60%;
+    margin: 0 auto;
+    background: #e9ebee;
+}
+.banner {
+    background-image: url("../image/anhnen.jpg");
+    height: 470px;
+    background-size: cover;
+    position: relative;
+}
+.banner::before {
+    content: "Rin Nguyễn";
+    position: absolute;
+    color: #fff;
+    font-size: 28px;
+    bottom: 14px;
+    left: 18%;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.logo {
+    background-image: url("../image/logo.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    border: 5px solid #fff;
+    position: absolute;
+    left: 19px;
+    bottom: -40px;
+}
+.menu {
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.menu ul li {
+    float: right;
+    margin: 0 25px;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #365899;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main {
+    clear: right;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.profile {
+    width: 32%;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    float: left;
+}
+.profile ul {
+    margin-left: 45px;
+    margin-top: 30px;
+}
+.profile ul li {
+    margin: 15px 0px;
+    font-size: 18px;
+}
+.profile ul li span {
+    color: #365899;
+    cursor: pointer;
+}
+.profile ul li ul {
+    margin: 0;
+    padding: 0;
+}
+.profile ul li ul li {
+    margin-top: 5px;
+    list-style: none;
+    float: left;
+    padding: 15px 25px;
+    background-color: #365899;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.profile ul li ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.profile ul li ul li:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #365899;
+    transition: all 0.3s ease;
+}
+.profile ul li ul li a:hover{
+    color: #000;
+    transition: all 0.3s ease;
+}
+.content {
+    width: 65%;
+    background-color: #fff;
+    height: auto;
+    border: 1px solid #c4c4c4;
+    float: right;
+}
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  /* typography */
+
+/* html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  } */
+  
+  thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+caption {
+    text-align: left;
+    padding: 10px 0px;
+    margin-left: 7px;
+}
+  /*-------------------------Content-----------*/
+
+  .logo2 {
+    background-image: url("../image/logo.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: 5px solid #fff;
+    left: 5px;
+    /* bottom: -40px; */
+    position: absolute;
+    top: 5px;
+    /* padding-bottom: 9px; */
+}
+.logo2::before {
+    content: "Rin Nguyễn";
+    position: absolute;
+    color: #365899;
+    left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 150px;
+    top: 3px;
+}
+.schedul {
+    padding-top: 90px;
+}
+.content1 {
+    position: relative;
+}
+.content2 {
+    position: relative;
+}
+.p-content {
+    width: 173px;
+    margin-top: 56px;
+}
+img {
+    background-size: cover;
+    width: 100%;
+}
+
+/*---------------Home--------------*/
+.navar-menu ul {
+    list-style: none;
+}
+.navar-menu ul li {
+    padding: 10px 0px;
+    margin : 10px 0px;
+    background: #000;
+    text-align: center;
+    border : 2px solid #000;
+    transition: all 0.3s ease;
+}
+.navar-menu ul li a {
+    padding: 5px 0px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.navar-menu ul li:hover {
+    background: #fff;
+    color : #000;
+    transition: all 0.3s ease;
+
+}
+.navar-menu ul li a:hover{
+    color : #000;
+    transition: all 0.3s ease;
+}

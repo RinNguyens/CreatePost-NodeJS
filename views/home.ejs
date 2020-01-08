@@ -1,0 +1,225 @@
+
+<%- include('header'); -%>
+<div 
+    class="loginNew" 
+    style
+    ="
+        width: 300px;
+        display: block;
+        margin-bottom: -80px;
+        margin-left: 66px;
+        float : left;
+    "
+>
+    <h1>I'm RinChans</h1>
+        <% if (currentUser) { %>
+        <p style="margin-bottom : 20px;">Xin chào <%= currentUser.displayName %></p>
+        <img src="image/3.jpg" alt="hello" style="width : 100px;height : 100px"/>
+        <hr style="width : 100px"/>
+        <br/>
+        <% } else { %>
+        <p style="margin-bottom : 30px">Chào mừng bạn đến với website</p>
+        <% } %>
+
+        <div class="navar-menu">
+            <ul>
+                <li><a href="auth/login">Login</a></li>
+                <li><a href="auth/signup">Signup</a></li>
+                <li><a href="auth/logout">LogOut</a></li>
+                <li><a href="profile/upload">UpLoad</a></li>
+                <li><a href="todo">Todo</a></li>
+            </ul>
+        </div>
+        
+</div>
+<div class="wapper">
+        <div class="banner">
+            <div class="logo"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Xem thêm</a></li>
+                <li><a href="#">Lưu trữ</a></li>
+                <li><a href="#">Ảnh</a></li>
+                <li><a href="#">Bạn bè</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Dòng thời gian</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="profile">
+                <ul>
+                    <li>Họ tên : <span>Nguyễn Văn Rin</span></li>
+                    <li>Ngày sinh : <span>18/05/1998</span></li>
+                    <li>Email : <span>RinNguyen98.py@gmail.com</span></li>
+                    <li>Đã học tại : <span>Thpt Lê Thành Phương</span></li>
+                    <li>Học : <span>CNTT Trường KHTN</span></li>
+                    <li>Sống tại : <span>Thành phố Hồ Chí Mình</span></li>
+                    <li>Đến từ : <span>Tuy An, Phú Yên, VietNam</span></li>
+                    <li class="li2"><h3>Danh sách bạn bè</h3>
+                        <ul class="menu2">
+                            <li><a href="https://web2-1660412-02.herokuapp.com/">Lưu Minh Nhật</a></li>
+                            <li><a href="http://my-profile-1660691.herokuapp.com/">Võ Thái Minh Tuệ</a></li>
+                            <li><a href="https://web2-phamdung.herokuapp.com/">Phạm Dũng</a></li>
+                            <li><a href="https://dat-vu.herokuapp.com/">Đạt Vũ</a></li>
+                            <li><a href="https://nodejs-bt.herokuapp.com/?fbclid=IwAR06r3BEaigEJ1UmkzbvxK4q-Jmw3hDBu0gZMWprI6j9gDW_zim1_gaKdvE">Hà Đức Tần</a></li>
+                            <li><a href="#">Văn Sanh</a></li>
+                            <li><a href="#">Lưu Nhật</a></li>
+                            <li><a href="https://rins1660490.herokuapp.com/">Rin Chan</a></li>
+                            <li><a href="#">Thanh Tâm</a></li>
+                            <li><a href="#">Nhật Phương</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content1">
+                    <div class="logo2">
+                        <p class="p-content" style="margin-bottom : 15px;"> <!---Text--></p>
+                    </div>
+                    <div class="schedul">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <form action="/" method="post" name="upload">
+                                <label >Tên Sản phẩm</label>
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    style="
+                                        width: 100%;
+                                        background: #fff;
+                                        color: #000;
+                                        display: block;
+                                        height : 100px;
+                                        text-align : center;
+                                "/>
+                                <label >Upload Product</label>
+                                <input 
+                                    type="file" 
+                                    name="avatar" 
+                                    style="
+                                        width: 100%;
+                                        background: #fff;
+                                        color: #000;
+                                        display: block;
+                                        height : 100px;
+                                        text-align : center;
+                                "/>
+                                <label>Giá Tiền </label>
+                                <input 
+                                    type="number"
+                                    name="price"
+                                    style="
+                                        width: 100%;
+                                        background: #fff;
+                                        color: #000;
+                                        display: block;
+                                        height : 100px;
+                                        text-align : center;
+                                "/>
+                                <label>Mô tả </label>
+                                <input 
+                                    type="text"
+                                    name="mota"
+                                    style="
+                                        width: 100%;
+                                        background: #fff;
+                                        color: #000;
+                                        display: block;
+                                        height : 100px;
+                                        text-align : center;
+                                "/>
+                                <button 
+                                    type="submit"
+                                    style="
+                                        border: 0px;
+                                        padding: 10px;
+                                        color: #fff;
+                                        background: #000;
+                                        margin: 10px 0;
+                                        ">
+                                    Chia Sẻ
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="content1">
+                    <div class="logo2">
+                        <p class="p-content">Schedule of me</p>
+                    </div>
+                    <div class="schedul">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th scope="col">Tên môn học</th>
+                                <th scope="col">Lớp nhóm</th>
+                                <th scope="col">Loại</th>
+                                <th scope="col">Lịch học</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Khai thác dữ liệu trên web</th>
+                                <td>16CK1</td>
+                                <td>LT</td>
+                                <td>T2(1 - 3) - P.F301</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Mạng máy tính</th>
+                                <td>17KC3</td>
+                                <td>LT</td>
+                                <td>T2(4 - 6) - P.C43</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Lập trình web2</th>
+                                <td>16CK3</td>
+                                <td>LT</td>
+                                <td>T4(1 - 3) - P.C43</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Tư tưởng HCM</th>
+                                <td>16CK2</td>
+                                <td>LT</td>
+                                <td>T5(4 - 6) - P.F301</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="logo2">
+                        <p class="p-content">Bầu trắng ngày nắng.</p>
+                    </div>
+                    <div class="schedul">
+                        
+                        <img src="/image/rin.jpg" alt="Rin">
+                    </div>
+                </div>
+                 <% for(let i = 0 ; i< Products.length ; i++) {%>
+                <% if(Products) { %>
+                <div class="content1">
+                    <div class="logo2">
+                        <p class="p-content">
+                            <%= Products[i].name %> <br/>
+                            <%= Products[i].price %> VND <br/>
+                            <%= Products[i].mota %> <br/>
+                        </p>
+                    </div>
+                   <div class="schedul">
+                        <img src="image/<%=Products[i].image%>" alt="<%=Products[i].image%>"/>
+                   </div>
+                </div>
+                <% } else { %>
+                <div class="logo2">
+                    <p class="p-content"><%= Products[i].name %></p>
+                    <p class="p-content"<%= Products[i].price %></p>
+                    <p class="p-content"><%= Products[i].mota%></p>
+                </div>
+                <div class="schedul">
+                    
+                </div>
+                <% } %>
+                <% } %>
+<%- include('footer'); -%>
